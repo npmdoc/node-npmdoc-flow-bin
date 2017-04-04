@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"flow-bin",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "flow-bin",
+    "description": "api documentation for [flow-bin (v0.43.0)](https://github.com/flowtype/flow-bin#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-flow-bin.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-flow-bin) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-flow-bin.svg)](https://travis-ci.org/npmdoc/node-npmdoc-flow-bin)",
     "devDependencies": {
-        "flow-bin": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "flow-bin": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-flow-bin",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-flow-bin",
+    "keywords": [
+        "documentation",
+        "flow-bin"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_flow_bin.js",
+    "name": "npmdoc-flow-bin",
+    "nameAlias": "npmdoc_flow_bin",
+    "nameOriginal": "npmdoc-flow-bin",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-flow-bin"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
