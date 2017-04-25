@@ -1,6 +1,6 @@
 # npmdoc-flow-bin
 
-#### api documentation for  [flow-bin (v0.44.2)](https://github.com/flowtype/flow-bin#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-flow-bin.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-flow-bin) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-flow-bin.svg)](https://travis-ci.org/npmdoc/node-npmdoc-flow-bin)
+#### basic api documentation for  [flow-bin (v0.44.2)](https://github.com/flowtype/flow-bin#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-flow-bin.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-flow-bin) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-flow-bin.svg)](https://travis-ci.org/npmdoc/node-npmdoc-flow-bin)
 
 #### Binary wrapper for Flow - A static type checker for JavaScript
 
